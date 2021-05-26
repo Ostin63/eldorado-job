@@ -38,16 +38,6 @@ const html = () => {
     .pipe(dest("build"));
 }
 
-const scripts = () => {
-  return src("source/js/*.js")
-    .pipe(terser())
-    .pipe(rename("script.min.js"))
-    .pipe(dest('build/js'))
-    .pipe(sync.stream())
-}
-
-exports.scripts = scripts;
-
 const images = () => {
   return src("source/img/*.{png,jpg}")
     .pipe(imagemin([
@@ -89,13 +79,7 @@ exports.svgstack = svgstack;
 
 const copy = (done) => {
   src([
-    "source/fonts/*.{woff2,woff}",
-    "source/*.ico",
-    "source/img/favicon/favicon.svg",
-    "source/*.webmanifest",
-    "source/libs/*.js",
-    "source/libs/*.css",
-    "source/video/*.mp4"
+    "source/fonts/*.{woff2,woff}"
   ], {
     base: "source"
   })
@@ -128,7 +112,6 @@ const reload = done => {
 
 const watcher = () => {
   watch("source/sass/**/*.scss", series(styles));
-  watch("source/js/*.js", series(scripts));
   watch("source/*.html", series(html, reload));
 }
 
@@ -138,7 +121,6 @@ exports.default = series(
   parallel(
     styles,
     html,
-    scripts,
     images,
     logo,
     svgstack

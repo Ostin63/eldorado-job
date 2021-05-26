@@ -18,7 +18,8 @@
   "bugs": {
     "url": "https://github.com/Ostin63/eldorado-job/issues"
   },
-  "homepage": "https://github.com/Ostin63/eldorado-job#readme","devDependencies": {
+  "homepage": "https://github.com/Ostin63/eldorado-job#readme",
+  "devDependencies": {
     "autoprefixer": "10.2.5",
     "browser-sync": "2.26.14",
     "del": "^6.0.0",
