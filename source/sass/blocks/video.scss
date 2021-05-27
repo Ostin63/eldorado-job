@@ -1,6 +1,4 @@
 .video {
-  padding-bottom: 20px;
-
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 25px 325px 1fr 325px 25px;
@@ -48,6 +46,7 @@
 .video__img {
   width: 320px;
   height: 170px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     width: 325px;
@@ -74,9 +73,9 @@
 }
 
 .video__item {
-  &--quality {
-    margin-top: 30px;
+  margin-bottom: 30px;
 
+  &--quality {
     &::before {
       content: "";
       margin: 0 auto;
@@ -93,8 +92,6 @@
   }
 
   &--motion {
-    margin-top: 30px;
-
     &::before {
       content: "";
       width: 60px;
@@ -111,8 +108,6 @@
   }
 
   &--stabilization {
-    margin-top: 30px;
-
     &::before {
       content: "";
       width: 60px;
@@ -129,6 +124,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
   }
@@ -142,6 +138,7 @@
 
   @media (min-width: $tablet-width) {
     width: 203px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
