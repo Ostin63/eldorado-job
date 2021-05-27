@@ -1,0 +1,144 @@
+.services {
+  padding-bottom: 70px;
+  display: grid;
+  grid-template-columns: 15px 1fr 15px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 25px 1fr 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 950px 1fr;
+  }
+}
+
+.services__title {
+  margin: 0;
+  padding-top: 20px;
+  font-size: 22px;
+  line-height: 31px;
+  grid-column: 2 / -2;
+  border-top: $border-black-30;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.services__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  grid-column: 2 / -2;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services__item {
+  width: 290px;
+  margin-left: 7px;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: $border-black-30;
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    margin: auto 0;
+    display: block;
+  }
+
+  &:nth-child(2n) {
+    margin-left: 0;
+    margin-right: 7px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
+
+    &::before {
+      order: 1;
+
+      @media (min-width: $tablet-width) {
+        order: 0;
+      }
+    }
+  }
+
+  &:last-child {
+    border: none;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 20px;
+      margin-right: auto;
+    }
+  }
+
+  &--smart-switch {
+    &::before {
+      background: url("../img/smart-switch.png") 50% 50% no-repeat;
+    }
+  }
+
+  &--samsung-health {
+    &::before {
+      background: url("../img/samsung-health.png") 50% 50% no-repeat;
+    }
+  }
+
+  &--bixby {
+    &::before {
+      background: url("../img/bixby.png") 50% 50% no-repeat;
+    }
+  }
+
+  &--samsung-pay {
+    &::before {
+      background: url("../img/samsung-pay.png") 50% 50% no-repeat;
+    }
+  }
+
+  &--smart-things {
+    &::before {
+      background: url("../img/smart-things.png") 50% 50% no-repeat;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 210px;
+    border: none;
+    margin: 0;
+    flex-direction: column;
+    justify-content: start;
+
+    &::before {
+      margin: 0 auto;
+      margin-bottom: 20px;
+      order: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 303px;
+  }
+}
+
+.services__text {
+  width: 205px;
+  margin: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
