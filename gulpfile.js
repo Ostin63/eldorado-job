@@ -79,7 +79,8 @@ exports.svgstack = svgstack;
 
 const copy = (done) => {
   src([
-    "source/fonts/*.{woff2,woff}"
+    "source/fonts/*.{woff2,woff}",
+    "source/*.ico"
   ], {
     base: "source"
   })
