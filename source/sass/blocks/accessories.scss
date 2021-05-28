@@ -1,14 +1,15 @@
 .accessories {
-  padding: 40px 0;
+  padding: 40px 0 10px;
   display: grid;
   grid-template-columns: 15px 1fr 15px;
 
   @media (min-width: $tablet-width) {
-    padding: 61px 0 60px;
+    padding-top: 61px;
     grid-template-columns: 25px 1fr 25px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-bottom: 36px;
     grid-template-columns: 1fr 950px 1fr;
   }
 }
@@ -129,5 +130,10 @@
     font-size: 16px;
     line-height: 24px;
   }
+}
 
+@media (min-width: $desktop-width) {
+  .accessories__text-none {
+    display: none;
+  }
 }
