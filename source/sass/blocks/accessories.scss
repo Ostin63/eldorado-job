@@ -4,7 +4,7 @@
   grid-template-columns: 15px 1fr 15px;
 
   @media (min-width: $tablet-width) {
-    padding: 40px 0 60px;
+    padding: 61px 0 60px;
     grid-template-columns: 25px 1fr 25px;
   }
 
@@ -26,6 +26,10 @@
     font-size: 30px;
     line-height: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 53px;
+  }
 }
 
 .accessories__list {
@@ -36,6 +40,10 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .accessories__item {
@@ -109,5 +117,17 @@
     grid-row: 1 / 2;
     font-size: 12px;
     line-height: 17px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 14px;
+      line-height: 21px;
+    }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 20px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
 }
