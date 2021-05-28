@@ -25,6 +25,10 @@
     font-size: 30px;
     line-height: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 54px;
+  }
 }
 
 .design__list {
@@ -48,8 +52,7 @@
 
   &--banner {
     width: 290px;
-    height: 307px;
-    padding: 20px 15px 25px;
+    padding: 20px 15px 26px;
     background: var(--black-bg);
     border-radius: 5px;
     font-weight: 500;
@@ -57,7 +60,7 @@
     line-height: 21px;
 
     .design__text {
-      margin: 19px 0 0;
+      margin: 18px 0 0;
       color: var(--basic-white);
 
       @media (min-width: $tablet-width) {
@@ -67,18 +70,20 @@
 
     @media (min-width: $tablet-width) {
       width: 325px;
-      height: 333px;
       margin: 0;
+      padding-bottom: 25px;
       order: 0;
     }
 
     @media (min-width: $desktop-width) {
       width: 222px;
+      height: 304px;
     }
   }
 
   &--colours {
     width: 142px;
+    margin-left: 0;
 
     .design__text {
       margin: 20px 0 0;
@@ -110,6 +115,7 @@
 
   &--gorilla-glass {
     width: 141px;
+    margin-right: 0;
 
     .design__text {
       margin: 20px 0 0;

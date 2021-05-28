@@ -33,7 +33,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: max-content 30px max-content 1fr 32px;
-    padding: 12px 0 8px;
+    padding: 12px 0 7px;
   }
 }
 
@@ -48,18 +48,19 @@
 .header__logo {
   width: 30px;
   height: 30px;
-  margin-left: 15px;
+  margin-left: 12px;
   display: inline-block;
   align-self: center;
 
   &:first-child {
-    margin-left: 0;
+    margin-top: -3px;
+    margin-left: -2px;
   }
 
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
-    margin-left: 20px;
+    margin-left: 17px;
   }
 }
 
@@ -89,10 +90,13 @@
 .header__menu {
   width: 32px;
   height: 32px;
-  padding-top: 4px;
   display: inline-block;
   grid-column: -2 / -1;
   grid-row: 1 / 2;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 2px;
+  }
 }
 
 .header__menu-svg {

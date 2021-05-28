@@ -13,7 +13,7 @@
 
 .video__title {
   margin: 0 15px;
-  padding: 20px 0 30px;
+  padding: 19px 0 31px;
   font-weight: bold;
   font-size: 22px;
   line-height: 31px;
@@ -91,21 +91,6 @@
     }
   }
 
-  &--motion {
-    &::before {
-      content: "";
-      width: 60px;
-      height: 60px;
-      margin: 0 auto;
-      display: block;
-      background: url("../img/stack.svg#slow-motion") 50% 50% no-repeat;
-
-      @media (min-width: $tablet-width) {
-        margin: auto 0;
-        margin-left: 20px;
-      }
-    }
-  }
 
   &--stabilization {
     &::before {
@@ -115,6 +100,22 @@
       margin: 0 auto;
       display: block;
       background: url("../img/stack.svg#stabilization") 50% 50% no-repeat;
+
+      @media (min-width: $tablet-width) {
+        margin: auto 0;
+        margin-left: 20px;
+      }
+    }
+  }
+
+  &--motion {
+    &::before {
+      content: "";
+      width: 60px;
+      height: 60px;
+      margin: 0 auto;
+      display: block;
+      background: url("../img/stack.svg#slow-motion") 50% 50% no-repeat;
 
       @media (min-width: $tablet-width) {
         margin: auto 0;

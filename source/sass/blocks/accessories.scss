@@ -33,12 +33,9 @@
   margin: 0 auto;
   list-style: none;
   grid-column: 2 / -2;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .accessories__item {
@@ -102,8 +99,15 @@
   line-height: 21px;
   border-top: $border-black-10;
 
+  &--cover {
+    margin-right: -2px;
+  }
+
   &--bottom {
+    padding-right: 2px;
     grid-column: 1 / -1;
     grid-row: 1 / 2;
+    font-size: 12px;
+    line-height: 17px;
   }
 }
